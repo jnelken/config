@@ -2,8 +2,7 @@
   "parser": "babel-eslint",
   "plugins": [
     "babel",
-    "react",
-    "flowtype"
+    "react"
   ],
   "ecmaFeatures": {
     "globalReturn": true,
@@ -44,10 +43,6 @@
     "eqeqeq": [2, "allow-null"],
     "func-names": 0,
     "func-style": [0, "declaration"],
-    "flowtype/space-after-type-colon": [
-      2,
-      "always"
-    ],
     "generator-star-spacing": [2, {"before": true, "after": true}],
     "guard-for-in": 2,
     "handle-callback-err": [2, "^(err|error|anySpecificError)$" ],
@@ -148,13 +143,14 @@
     "no-warning-comments": [0, { "terms": ["todo", "fixme", "xxx"], "location": "start" }],
     "no-with": 2,
     "one-var": 0,
+    "object-curly-spacing": [2, "always"],
     "operator-assignment": [0, "always"],
+    "prefer-const": ["error", { "destructuring": "all", "ignoreReadBeforeAssign": true }],
     "quote-props": 0,
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
-    "react/jsx-boolean-value": 2,
     "jsx-quotes": [2, "prefer-double"],
-    "object-curly-spacing": [2, "always"],
+    "react/jsx-boolean-value": 2,
     "react/jsx-no-undef": 2,
     "react/jsx-no-duplicate-props": 2,
     "react/no-danger": 2,
@@ -180,12 +176,7 @@
     "sort-vars": 0,
     "keyword-spacing": [2, {
       "before": true,
-      "after": true,
-      # "overrides": {
-      #   "if": { "after": false },
-      #   "for": { "after": false },
-      #   "while": { "after": false }
-      # }
+      "after": true
     }],
     "space-before-blocks": [2, "always"],
     "space-before-function-paren": [2, {
